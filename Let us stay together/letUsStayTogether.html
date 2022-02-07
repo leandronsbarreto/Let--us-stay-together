@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Leave no one behind</title>
+      <style>
+         body, html {
+         width: 100%;
+         height: 100%;
+         background-color: lightgreen;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         .container {
+         width: 480px;
+         height: 480px;
+         display: flex;
+         flex-wrap: wrap;
+         align-content: center;
+         justify-content: center;
+         border-radius: 40px 40px 40px 40px;
+         }
+         img {
+         height: 30px;
+         width: 30px;
+         }
+         .flexbox-item {
+         width: 120px;
+         height: 120px;
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: column;
+         align-content: center;
+         justify-content: center;
+         background-color: rgb(58, 66, 180);
+         color: black;
+         font-size: 12.5pt;
+         font-family: "Gotham Narrow A","Gotham Narrow B","Gotham Narrow A","Helvetica Neue",Helvetica,Arial,sans-serif;
+         font-weight: bold;
+         }
+         .flexbox-item-1 {
+         background-color: rgb(58, 66, 180);
+         animation-name: leave-it;
+         animation-duration: 2s;
+         animation-direction: alternate;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+         border-radius: 40px 0 0 0;
+         }
+         @keyframes leave-it {
+         100% {transform: translateX(-120px); color: black}
+         }
+         .flexbox-item-3 {
+         background-color: lightgreen;
+         animation: juntos 2s linear alternate infinite;
+         }
+         @keyframes juntos {
+         100% {transform: translateY(-120px);}    
+         }
+         .flexbox-item-4 {
+         border-top-right-radius: 40px;
+         }
+         .flexbox-item-7 {
+         background-color: lightgreen;
+         animation-name: no7;
+         animation-duration: 2s;
+         animation-timing-function: linear;
+         animation-direction: alternate;
+         animation-iteration-count: infinite;
+         }
+         @keyframes no7 {
+         100% {transform: translateX(120px);}
+         }
+         .flexbox-item-9 {
+         animation-name: leavefirst;
+         animation-duration: 2s;
+         animation-timing-function: linear;
+         animation-direction: alternate;
+         animation-iteration-count: infinite;
+         }
+         @keyframes leavefirst {
+         0%, 100% {transform: 0;}
+         50% {transform: translateX(-120px);}
+         }
+         .flexbox-item-11 {
+         animation-name: colorchange1;
+         animation-duration: 6s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+         }
+         @keyframes colorchange1 {
+         0%, 100% {transform: 0;}
+         50% {transform: rotateY(90deg);}
+         }
+         .flexbox-item-12 {
+         background-color: lightgreen;
+         }
+         .flexbox-item-14 {
+         background-color: lightgreen;
+         animation-name: oneit;
+         animation-duration: 2s;
+         animation-timing-function: linear;
+         animation-direction: alternate;
+         animation-iteration-count: infinite;
+         }
+         @keyframes oneit {
+         100% {transform: translateZ(120px);}
+         } 
+         .flexbox-item-13 {
+         border-bottom-left-radius: 40px;
+         animation-name: treze;
+         animation-duration: 2s;
+         animation-timing-function: linear;
+         animation-direction: alternate;
+         animation-iteration-count: infinite;
+         }
+         @keyframes treze {
+         0%, 100% {transform: 0;}
+         50% {transform: translateY(120px);}
+         }
+         .flexbox-item-16 {
+         border-bottom-right-radius: 40px;
+         animation-name: behindlast;
+         animation-duration: 2s;
+         animation-timing-function: linear;
+         animation-direction: alternate;
+         animation-iteration-count: infinite;
+         }
+         @keyframes behindlast {
+         0%, 100% {transform: 0; color: black;}
+         50% {transform: translateX(120px); color:white}
+         }
+         #brazilianflag {
+         position: absolute;
+         top: 530px;
+         left: 61%;
+         }
+         #magnetic {
+         position: absolute;
+         top: 180px;
+         left: 53%;
+         }
+         #spanishflag {
+         position: absolute;
+         top: 180px;
+         left: 37%;
+         }
+         #cowgirl {
+         position: absolute;
+         top: 300px;
+         left: 53%;
+         }
+         .text {
+         position: fixed;
+         top: 130px;
+         left: 20px;
+         color: black;
+         font-size: 45pt;
+         font-family: "Gotham Narrow A","Gotham Narrow B","Gotham Narrow A","Helvetica Neue",Helvetica,Arial,sans-serif;
+         font-weight: bold;
+         text-decoration: underline;
+         }
+      </style>
+   </head>
+   <body>
+      <img id="brazilianflag" src="brazil.png" alt="brazilianflag">
+      <img id="magnetic" src="magnetic.png" alt="magnetic">
+      <img id="spanishflag" src="spain.png" alt="spanishflag">
+      <img id="cowgirl" src="cowgirl.png" alt="cowgirl">
+      <div class="text">Auf einer <br> besseren <br> Welt <br> können wir <br> zusammen <br> leben.</div>
+      <div class="container">
+         <div class="flexbox-item flexbox-item-1" style="color:white; font-weight:bolder">Vamos
+            <img src="blackheart.png" alt="blackheart" style="transform: translateX(15px);">
+         </div>
+         <div class="flexbox-item flexbox-item-2">permanecer<img src="luck.png" alt="luck" style="transform: translateX(30px);"></div>
+         <div class="flexbox-item flexbox-item-3">juntos
+            <img src="womanfeeding.png" alt="womanfeeding" style="transform: translateX(13px);">
+         </div>
+         <div class="flexbox-item flexbox-item-4">!</div>
+         <div class="flexbox-item flexbox-item-5">Lass<img src="gaycouple.png" alt="gaycouple"></div>
+         <div class="flexbox-item flexbox-item-6" style="color:white; font-weight:bolder">uns
+            <img src="transflag.png" alt="transflag">
+         </div>
+         <div class="flexbox-item flexbox-item-7">zusammen<img src="hug.png" alt="hug" style="transform: translateX(27px);"></div>
+         <div class="flexbox-item flexbox-item-8">bleiben!</div>
+         <div class="flexbox-item flexbox-item-9">Let
+            <img src="astrounaut.png" alt="astronaut">
+         </div>
+         <div class="flexbox-item flexbox-item-10">us
+            <img src="earth.png" alt="earth" style="transform: translateX(-12%);">
+         </div>
+         <div class="flexbox-item flexbox-item-11" style="color:white; font-weight:bolder">stay
+            <img src="alien.png" alt="alien">
+         </div>
+         <div class="flexbox-item flexbox-item-12">together!
+            <img src="handshake.png" alt="handshake" style="transform: translateX(63%);">
+         </div>
+         <div class="flexbox-item flexbox-item-13">¡Quedémonos<img src="wavyhand.png" alt="wavyhand" style="transform: translateX(38px);"></div>
+         <div class="flexbox-item flexbox-item-14">juntos
+            <img src="japan.png" alt="japaneseflag" style="transform: translateX(10px);">
+         </div>
+         <div class="flexbox-item flexbox-item-15">!</div>
+         <div class="flexbox-item flexbox-item-16">
+            <img src="rainbow.png" alt="rainbow">
+         </div>
+      </div>
+   </body>
+</html>
