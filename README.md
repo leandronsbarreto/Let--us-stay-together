@@ -1,2 +1,2 @@
 # Let us stay together
-Aufgabe mit HTML und CSS
+Aufgabe HTML und CSS
